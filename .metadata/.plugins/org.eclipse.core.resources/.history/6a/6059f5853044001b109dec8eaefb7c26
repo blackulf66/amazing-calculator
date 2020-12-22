@@ -5,15 +5,6 @@ import java.util.Scanner;
 public class IncredibleCalculator {
 
     public static void main(String[] args) {
-    	System.out.println("DAME DOS NUMEROS");
-    	 int a;
-         int b;
-         int suma;
-         int eleccion;
-        
-         a=leerEnteroEntrada();
-         b=leerEnteroEntrada();
-        
 
         System.out.println("Selecciona la operación que prefieras realizar: ");
         System.out.println("1. Sumar");
@@ -23,13 +14,10 @@ public class IncredibleCalculator {
         System.out.println("5. Dividir (división con decimales)");
 
         int opcion = leerEnteroEntrada();
-      
+
 
         switch (opcion) {
-            case 1: 
-            	suma=a + b;
- 	
-            
+            case 1: //Sumar. Debes leer dos numeros enteros de entrada e imprimir su suma
                     break;
             case 2: // Restar. Debes leer dos números enteros de entrada e imprimir su resta
                     break;
@@ -43,7 +31,7 @@ public class IncredibleCalculator {
         }
 
     }
- 
+
     public static int suma(int a, int b) {
         return a + b;
     }
